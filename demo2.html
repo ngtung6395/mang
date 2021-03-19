@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let arr=[[1,-2,5,30],[-2,-6,-17,4],[10,-6,21,7]];
+    let max=arr[0][0];
+    let min=arr[0][0];
+    for (let i=0;i<arr.length;i++){
+        for(let j=0;j<arr[i].length;j++) {
+        if (max<arr[i][j]) max=arr[i][j];
+        else if(min>arr[i][j]) min=arr[i][j];
+        }
+    }
+    alert(max);
+    alert(min);
+</script>
+</body>
+</html>
